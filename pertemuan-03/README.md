@@ -9,4 +9,7 @@ Hari ini kamis, 09.okt.2025 saya mempelajari:
 <li>membuat struktur from untuk section contact</li>
 <li>membuat styling untuk selector ID #about</li>
 <li>membuat styling untuk selector ID #about elemen h2</li>
+<li>membuat stying untuk selector ID #about elemen p</li>
+<li>membuat styling untuk selector ID #about elemen strong</li>
+<li>membuat styling untuk selector ID #about mode responsif (mobile)</li>
 </ol>
