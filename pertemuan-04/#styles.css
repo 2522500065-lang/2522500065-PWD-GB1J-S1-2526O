@@ -9,3 +9,10 @@ body {
     color: #333;
     line-height: 1.5;
 }
+
+header {
+    background: #003366;
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+}
