@@ -19,4 +19,5 @@
   <li>mengatasi eror php</li>
   <li>mengatasi eror php</li>
   <li>menambahkan fungsi bersihkan,fungsitidakkosong</li>
+  <li>menambahkan fungsi formattanggal</li>
 </ol>
