@@ -13,4 +13,5 @@
   <li>echo session ke nilai label section contact selesai</li>
   <li>mengubah session menjadi arrBiodata</li>
   <li>mengatasi eror</li>
+  <li>menghapus dan menambahkan session about</li>
 </ol>
