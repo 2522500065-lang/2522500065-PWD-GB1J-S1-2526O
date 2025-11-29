@@ -21,4 +21,5 @@
   <li>menambahkan fungsi bersihkan,fungsitidakkosong</li>
   <li>menambahkan fungsi formattanggal</li>
   <li>menambahkan fungsi tampilBiodata</li>
+  <li>menambahkan fungsi tampilBiodata</li>
 </ol>
