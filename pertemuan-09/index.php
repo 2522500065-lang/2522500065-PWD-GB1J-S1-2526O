@@ -107,14 +107,14 @@ endif;
     $fieldconfig = [
       "nim" => ["label" => "NIM:", "suffix" => ""],
       "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128526" ],
-      "tempat" => ["label" => "Tempat Lahir:", "suffik" => ""],
+      "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
       "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
       "hobi" => ["label" => "Hobi:", "sufflix" => "&#127926"],
       "pasangan" => ["label" => "Pasangan:", "suffik" => "&hearts;"],
-      "pekerjaan" => ["label" => "Pekerjaan", "suffik" => "&copy; 2025"],
-      "ortu" => ["label" => "Nama Orang Tua", "suffik" => ""],
-      "kakak" => ["label" => "Nama Kakak", "suffik" => ""],
-      "adik" => ["label" => "Nama Adik", "suffik" => ""],
+      "pekerjaan" => ["label" => "Pekerjaan", "suffix" => "&copy; 2025"],
+      "ortu" => ["label" => "Nama Orang Tua", "suffix" => ""],
+      "kakak" => ["label" => "Nama Kakak", "suffix" => ""],
+      "adik" => ["label" => "Nama Adik", "suffix" => ""],
     ];
     ?>
 
@@ -123,22 +123,10 @@ endif;
   <?php foreach ($fieldconfig as $kunci => $metadata): ?>
   <p>
     <strong><?= $metadata["label"] ?></strong>
-    <?= htmlspecialchars(string: $biodata[$kunci] ?? "") ?>
+    <?= htmlspecialchars($biodata[$kunci] ?? "") ?>
     <?= $metadata["suffix"] ?>
   </p>
   <?php endforeach; ?>
-
-  <p><strong>NIM:</strong> <?= $txtNim ?></p>
-  <p><strong>Nama Lengkap:</strong> <?= $txtNmLengkap ?> &#128526;</p>
-  <p><strong>Tempat Lengkap:</strong> <?= $txtT4Lhr ?></p
-  <p><strong>Tanggal lahir:</strong> <?= $txtTglLahir?></p>
-  <p><strong>Hobi:</strong> <?= $txtHobi ?> &#127926;</p>
-  <p><strong>Pasangan:</strong> <?= $txtPasangan ?> &hearts;</p>
-  <p><strong>Pekerjaan:</strong> <?= $txtPekerjaan ?> &copy; 2025</p>
-  <p><strong>Nama Orang Tua:</strong> <?= $txtNmortu ?></p>
-  <p><strong>Nama kakak:</strong> <?= $txtNmKakak?></p>
-  <p><strong>Nama Adik:</strong> <?= $txtNmAdik ?></p>
-  </section>
 
   <section id="contact">
       <h2>Kontak Kami</h2>
