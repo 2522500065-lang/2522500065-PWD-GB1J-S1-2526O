@@ -1,7 +1,7 @@
 <?php
 function bersihkan($str)
 {
- return htmlspecialchars($str)
+ return htmlspecialchars(trim($str));
 }
 function tidakkosong($str)
 {
@@ -16,10 +16,10 @@ function tampilkanBiodata($conf,$arr)
  $html = "";
  foreach ($conf as $k => $v) {
     $label = $v["label"];
-    $nilai = bersihkan($arr[$k] ?? '') :
+    $nilai = bersihkan($arr[$k] ?? '');
     $suffix = $v["suffix"];
 
-    $html .= "<p><strong>{$label"}</strong> {$nilai}{$suffix}</p>";
-    {
-return $html;
+    $html .= "<p><strong>{$label}</strong> {$nilai}{$suffix}</p>";
+    }
+    return $html;
  }
