@@ -22,4 +22,5 @@
   <li>menambahkan fungsi formattanggal</li>
   <li>menambahkan fungsi tampilBiodata</li>
   <li>menambahkan fungsi tampilBiodata</li>
+  <li>menambahkan fungsi php dengan kode require_once</li>
 </ol>
