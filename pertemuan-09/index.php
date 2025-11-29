@@ -119,8 +119,30 @@ endif;
     ?>
 
 <section id="about">
+  <h2>Tentang saya</h2>
+  <?php foreach ($fieldconfig as $kunci => $metadata): ?>
+  <p>
+    <strong><?= $metadata["label"] ?></strong>
+    <?= htmlspecialchars(string: $biodata[$kunci] ?? "") ?>
+    <?= $metadata["suffix"] ?>
+  </p>
+  <?php endforeach; ?>
+
+  <p><strong>NIM:</strong> <?= $txtNim ?></p>
+  <p><strong>Nama Lengkap:</strong> <?= $txtNmLengkap ?> &#128526;</p>
+  <p><strong>Tempat Lengkap:</strong> <?= $txtT4Lhr ?></p
+  <p><strong>Tanggal lahir:</strong> <?= $txtTglLahir?></p>
+  <p><strong>Hobi:</strong> <?= $txtHobi ?> &#127926;</p>
+  <p><strong>Pasangan:</strong> <?= $txtPasangan ?> &hearts;</p>
+  <p><strong>Pekerjaan:</strong> <?= $txtPekerjaan ?> &copy; 2025</p>
+  <p><strong>Nama Orang Tua:</strong> <?= $txtNmortu ?></p>
+  <p><strong>Nama kakak:</strong> <?= $txtNmKakak?></p>
+  <p><strong>Nama Adik:</strong> <?= $txtNmAdik ?></p>
+  </section>
+
+  <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="proses.php" method="POST">
+      <form action="proses.php" method="POST"> 
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">

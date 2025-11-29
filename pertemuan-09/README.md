@@ -15,4 +15,5 @@
   <li>mengatasi eror</li>
   <li>menghapus dan menambahkan session about</li>
   <li>mengatasi eror php</li>
+  <li>menampilkan array menggunakan looping foreach</li>
 </ol>
