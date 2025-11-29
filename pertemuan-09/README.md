@@ -14,4 +14,5 @@
   <li>mengubah session menjadi arrBiodata</li>
   <li>mengatasi eror</li>
   <li>menghapus dan menambahkan session about</li>
+  <li>mengatasi eror php</li>
 </ol>

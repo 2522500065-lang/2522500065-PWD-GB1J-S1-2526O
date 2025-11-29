@@ -101,7 +101,7 @@ endif;
         <button type="reset">Batal</button>
       </form>
 
-    <?/php
+    <?php
     $biodata = $_SESSION["biodata"] ?? [];
 
     $fieldconfig = [
