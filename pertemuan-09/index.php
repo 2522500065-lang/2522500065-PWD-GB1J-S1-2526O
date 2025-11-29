@@ -127,7 +127,7 @@ endif;
     <?= $metadata["suffix"] ?>
   </p>
   <?php endforeach; ?>
-
+  
   <section id="contact">
       <h2>Kontak Kami</h2>
       <form action="proses.php" method="POST"> 
