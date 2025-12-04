@@ -23,4 +23,5 @@
   <li>menambahkan fungsi tampilBiodata</li>
   <li>menambahkan fungsi tampilBiodata</li>
   <li>menambahkan fungsi php dengan kode require_once</li>
+  <li>
 </ol>
