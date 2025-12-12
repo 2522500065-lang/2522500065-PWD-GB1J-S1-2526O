@@ -6,3 +6,4 @@
 <li>cek error koneksi dan error query</li>
 <li>mengatasi error pada read.php</li>
 <LI>menambahkan tanda bintang</li>
+<li>memodif kode read_inc.php</li>
