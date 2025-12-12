@@ -8,3 +8,4 @@
 <LI>menambahkan tanda bintang</li>
 <li>memodif kode read_inc.php</li>
 <li>mengubah kode pada index.php</li>
+<li>mengatasi error</li>
