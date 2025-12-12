@@ -85,66 +85,66 @@ require_once __DIR__ . '/fungsi.php';
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
-    </section>
-
-    <?php
-    $biodata = $_SESSION["biodata"] ?? [];
-
-    $fieldConfig = [
-      "nim" => ["label" => "NIM:", "suffix" => ""],
-      "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128526;"],
-      "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
-      "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
-      "hobi" => ["label" => "Hobi:", "suffix" => " &#127926;"],
-      "pasangan" => ["label" => "Pasangan:", "suffix" => " &hearts;"],
-      "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => " &copy; 2025"],
-      "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
-      "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
-      "adik" => ["label" => "Nama Adik:", "suffix" => ""],
-    ];
-    ?>
-
-    <section id="about">
-      <h2>Tentang Saya</h2>
-      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
-    </section>
-
-    <section id="contact">
-      <h2>Kontak Kami</h2>
-      <form action="proses.php" method="POST">
-
-        <label for="txtNama"><span>Nama:</span>
-          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
-        </label>
-
-        <label for="txtEmail"><span>Email:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
-        </label>
-
-        <label for="txtPesan"><span>Pesan Anda:</span>
-          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
-          <small id="charCount">0/200 karakter</small>
-        </label>
-
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-      </form>
 
       <?php
-      $contact = $_SESSION["contact"] ?? [];
+      $biodata = $_SESSION["biodata"] ?? [];
 
-      $fieldContact = [
-        "nama" => ["label" => "Nama:", "suffix" => ""],
-        "email" => ["label" => "Email:", "suffix" => ""],
-        "pesan" => ["label" => "Pesan Anda:", "suffix" => ""]
+      $fieldconfig = [
+        "nim" => ["label" => "NIM:", "suffix" => ""],
+        "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128526"],
+        "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
+        "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
+        "hobi" => ["label" => "Hobi:", "suffix" => "&#127926"],
+        "pasangan" => ["label" => "Pasangan:", "suffix" => "&hearts;"],
+        "pekerjaan" => ["label" => "Pekerjaan", "suffix" => "&copy; 2025"],
+        "ortu" => ["label" => "Nama Orang Tua", "suffix" => ""],
+        "kakak" => ["label" => "Nama Kakak", "suffix" => ""],
+        "adik" => ["label" => "Nama Adik", "suffix" => ""],
       ];
       ?>
 
-      <br>
-      <hr>
-      <h2>Yang menghubungi kami</h2>
-      <?= tampilkanBiodata($fieldContact, $contact) ?>
-    </section>
+      <section id="about">
+        <h2>Tentang saya</h2>
+        <?= tampilkanBiodata($fieldconfig, $biodata) ?>
+      </section>
+
+
+      <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form action="proses.php" method="POST">
+          <label for="txtNama"><span>Nama:</span>
+            <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+          </label>
+
+          <label for="txtEmail"><span>Email:</span>
+            <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+          </label>
+
+          <label for="txtPesan"><span>Pesan Anda:</span>
+            <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+            <small id="charCount">0/200 karakter</small>
+          </label>
+
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
+        </form>
+
+        
+        <?php
+        $contact = $_SESSION["contact"] ?? [];
+
+        $fieldkontak = [
+          "nama" => ["label" => "Nama:", "suffix" => ""],
+          "email" => ["label" => "Email:", "suffix" => ""],
+          "pesan" => ["label" => "Pesan Anda:", "suffix" => ""]
+        ];
+        ?>
+        
+        <br>
+        <hr>
+        <h2>Yang menghubungi kami</h2>
+        <?php include 'read_inc.php'; ?>
+      </section>
   </main>
 
   <footer>
