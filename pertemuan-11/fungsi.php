@@ -27,3 +27,4 @@ function tampilkanBiodata($conf, $arr)
   }
   return $html;
 }
+
